@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Welcome to My Demo</title>
+ <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #17a2b8;
+            height: 50vh;
+        }
+
+        #content .container #content-row #content-column #content-box {
+            margin-top: 120px;
+            max-width: 400px;
+            height: 350px;
+            border: 1px solid #9C9C9C;
+            background-color: #EAEAEA;
+        }
+
+            #content .container #content-row #content-column #content-box #content-form {
+                padding: 20px;
+            }
+
+                #content .container #content-row #content-column #content-box #content-form #register-link {
+                    margin-top: -85px;
+                }
+    </style>
+</head>
+<body>
+    <div id="content" align="center">
+        <br /><br />
+       <h2 class="container" style="color:white;">Welcome!!!!</h2>
+         <div class="container">
+             <div id="content-row" class="row justify-content-center align-items-center">
+                <div id="content-column" class="col-md-6">
+                    <div id="content-box" class="col-md-12">
+                        <h3 class="text-center text-info">Login Successful</h3>
+                        <div style="color:red;">@ViewBag.message</div>
+                        <div><img src="https://c.tenor.com/5G7cEiESNgEAAAAM/cheese-silly-cat.gif" alt="cat" width="250"/></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
